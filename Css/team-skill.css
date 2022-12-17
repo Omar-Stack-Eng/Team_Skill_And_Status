@@ -1,0 +1,252 @@
+/* Start Golbal Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+/* End Golbal Rules */
+/* Start Header */
+.header {
+  padding: 20px;
+}
+.header .container  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .logo {
+  font-weight: 800;
+  font-size: 20px;
+}
+ul {
+  display: flex;
+  justify-content: center;
+}
+.header .container .links ul{
+  list-style-type: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.header .container .links ul li {
+  padding: 5px;
+}
+.header .container .links ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+/* End Header */
+/* Start Services */
+.services {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f6f6f6;
+}
+.services .container h2 {
+  text-align: center;
+}
+.services .container h2 span {
+  color: #25b3f4;
+}
+.services .container p {
+  text-align: center;
+  color: #777;
+  line-height: 1.4;
+}
+/* End Services */
+/* Start Features */
+.features {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+.features .container h3,
+.features .container p {
+  text-align: center;
+}
+.features .container p {
+  color: #777;
+}
+.features .container img {
+display: block;
+margin: auto;
+}
+/* End Features */
+/* Start About */
+.about {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f6f6f6;
+}
+.about .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.image {
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+}
+@media (max-width: 991px) {
+  .about .container img {
+    display: none;
+  }
+}
+.about .container .image,
+.about .container .text {
+  flex-basis: calc((100% - 20px) / 2);
+}
+@media (max-width: 991px) {
+  .about .container .text {
+    flex-basis: 100%;
+  }
+}
+/* End About */
+/* Start Landing */
+.landing {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.landing .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:auto;
+}
+@media (max-width: 767px) {
+  .landing .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.landing .container .srv-1 {
+  background-color: #b33939;
+  color: white;
+  text-align: center;
+  flex-basis: calc((100% - 40px) / 3);
+}
+.landing .container .srv-1 p {
+font-size: 30px;
+font-weight: bold;
+}
+.landing .container .srv-1 span {
+  font-size: 15px;
+}
+.landing .container .srv-2 {
+background-color: #227093;
+color: white;
+text-align: center;
+flex-basis: calc((100% - 40px) / 3);
+}
+.landing .container .srv-2 p {
+  font-size: 30px;
+  font-weight: bold;
+}
+.landing .container .srv-2 span {
+  font-size: 15px;
+}
+.landing .container .srv-3 {
+  background-color: #218c74;
+  color: white;
+  text-align: center;
+  flex-basis: calc((100% - 40px) / 3);
+}
+.landing .container .srv-3 p {
+  font-size: 30px;
+  font-weight: bold;
+}
+.landing .container .srv-3 span {
+  font-size: 15px;
+}
+/* End Landing */
+/* Start Skills */
+.our-skills {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f6f6f6;
+  position: relative;
+}
+.our-skills h2 {
+  text-align: center;
+}
+.our-skills .container {
+  display: flex;
+  align-items: center;
+}
+.our-skills .skills {
+  flex: 1;
+}
+.our-skills .skill h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.our-skills .skill h3 span {
+  font-size: 12px;
+  position: absolute;
+  color: white;
+  top: 48px;
+  right: 15px;
+  z-index: 1;
+}
+.our-skills .skill .the-progress {
+  position: relative;
+  background-color: #eee;
+  height: 30px;
+}
+.our-skills .skill .the-progress span {
+  position: absolute;
+  left:0;
+  top: 0;
+  height: 100%;
+  background-color: #03a9f4;
+}
+/* End Skills */
+/* Start Footer */
+footer {
+  background-color: #333;
+  color: white;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+/* End Footer */
